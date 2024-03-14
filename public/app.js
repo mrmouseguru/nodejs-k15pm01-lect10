@@ -24,5 +24,10 @@ export default class App {
 
     let s = `${text}\n${obj.givenName} ${obj.surname}`;
     document.querySelector("#results").textContent = s;
+
+    console.log("object javascript", obj);
+
+    let student = new Student(obj);
+    console.log("Student object", student);
   }
 }
