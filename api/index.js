@@ -46,6 +46,7 @@ api.use("/students/:id", (req, res, next) => {
   next();
 });
 
+//GET: /api/students/mrteo
 api.get("/students/:id", (req, res) => {
   let student = STUDENTS[req.params.id];
   res.json(student);
