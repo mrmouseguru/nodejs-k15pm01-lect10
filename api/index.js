@@ -52,6 +52,7 @@ api.get("/students/:id", (req, res) => {
   res.json(student);
 });
 
+//PATH: /api/students/mrteo
 api.patch("/students/:id", (req, res) => {
   let student = STUDENTS[req.params.id];
   if ("dept" in req.body) {
