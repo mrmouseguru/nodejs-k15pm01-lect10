@@ -66,7 +66,7 @@ api.patch("/students/:id", (req, res) => {
   }
   res.json(student);
 });
-
+//GET: /api/mrteo/courses
 api.get("/students/:id/courses", (req, res) => {
   res.json({ courses: [
     { code: "CS107", units: 5 }, { code: "CS193X", units: 3 }

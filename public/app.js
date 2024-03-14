@@ -32,5 +32,7 @@ export default class App {
 
     let student2 = await Student.load("mchang");
     console.log("Student2", student2);
+    let courses = await student2.listCourse();
+    console.log("courses list", courses);
   }
 }
